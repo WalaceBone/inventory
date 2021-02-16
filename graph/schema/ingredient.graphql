@@ -1,0 +1,13 @@
+type Ingredient {
+    id : ID!
+    name: String!
+    currentStock: Int!
+    minimumStock: Int!
+}
+
+input NewIngredient {
+    name: String!
+    currentStock: Int!
+    minimumStock: Int!
+}
+

@@ -1,0 +1,5 @@
+
+type Query {
+    Ingredients: [Ingredient!]!
+    Recipes: [Recipe!]!
+}

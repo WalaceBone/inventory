@@ -1,0 +1,30 @@
+type Recipe {
+    id : ID!
+    name: String!
+    currentStock: Int!
+    minimumStock: Int!
+    mandatoryComponent: [Component]!
+}
+
+input NewRecipe {
+    name: String!
+    currentStock: Int!
+    minimumStock: Int!
+}
+
+type Component {
+    id: ID!
+    type: ComponentType!
+    quantity: Int!
+}
+
+input ComponentInput {
+    id: ID!
+    type: ComponentType!
+    quantity: Int!
+}
+
+enum ComponentType {
+    RECIPE
+    INGREDIENT
+}
