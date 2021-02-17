@@ -1,5 +1,7 @@
 NAME=server.go
 
+gorm:
+	go run gorm.go
 
 all: clean build run
 
