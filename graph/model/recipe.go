@@ -1,9 +1,9 @@
 package model
 
 type Component struct {
-	Type string `json:"type"`
-	Recipe string `json:"recipe"`
-	Ingredient string `json:"ingredient"`
+	ID       string `json:"id"`
+	Type     string `json:"type"`
+	Quantity int    `json:"quantity"`
 }
 
 type Recipe struct {

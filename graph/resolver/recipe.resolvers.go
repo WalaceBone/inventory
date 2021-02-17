@@ -10,15 +10,7 @@ import (
 	"inventory/graph/model"
 )
 
-func (r *componentResolver) ID(ctx context.Context, obj *model.Component) (string, error) {
-	panic(fmt.Errorf("not implemented"))
-}
-
 func (r *componentResolver) Type(ctx context.Context, obj *model.Component) (model.ComponentType, error) {
-	panic(fmt.Errorf("not implemented"))
-}
-
-func (r *componentResolver) Quantity(ctx context.Context, obj *model.Component) (int, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
@@ -34,3 +26,16 @@ func (r *Resolver) Recipe() generated.RecipeResolver { return &recipeResolver{r}
 
 type componentResolver struct{ *Resolver }
 type recipeResolver struct{ *Resolver }
+
+// !!! WARNING !!!
+// The code below was going to be deleted when updating resolvers. It has been copied here so you have
+// one last chance to move it out of harms way if you want. There are two reasons this happens:
+//  - When renaming or deleting a resolver the old code will be put in here. You can safely delete
+//    it when you're done.
+//  - You have helper methods in this file. Move them out to keep these resolver files clean.
+func (r *componentResolver) ID(ctx context.Context, obj *model.Component) (string, error) {
+	panic(fmt.Errorf("not implemented"))
+}
+func (r *componentResolver) Quantity(ctx context.Context, obj *model.Component) (int, error) {
+	panic(fmt.Errorf("not implemented"))
+}

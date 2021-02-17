@@ -1,7 +1,7 @@
 type Mutation {
     #Ingredient
     createIngredient(input: NewIngredient!): Ingredient!
-    updateingredientStock(quantity: Int!, ingredientId: ID!): Boolean
+    updateIngredientStock(quantity: Int!, ingredientId: ID!): Boolean
 
     #Recipe
     createRecipe(input: NewRecipe!): Recipe!

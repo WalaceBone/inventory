@@ -22,7 +22,7 @@ func (r *mutationResolver) CreateIngredient(ctx context.Context, input model.New
 	return ingredient, nil
 }
 
-func (r *mutationResolver) UpdateingredientStock(ctx context.Context, quantity int, ingredientID string) (*bool, error) {
+func (r *mutationResolver) UpdateIngredientStock(ctx context.Context, quantity int, ingredientID string) (*bool, error) {
 	panic(fmt.Errorf("not implemented"))
 }
 
